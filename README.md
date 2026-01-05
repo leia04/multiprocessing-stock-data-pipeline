@@ -10,6 +10,11 @@ Using stock price data from all Korean listed companies since 2020, the primary 
 - Sequential data collection required thousands of API calls, resulting in long execution times.
 - The project required a scalable solution to reduce data ingestion time while maintaining data integrity.
 
+## Key Findings
+- Approximately **2,160 company tickers** were collected.
+- The final dataset contained roughly **2.1 million rows** of stock price data.
+- Execution time was reduced from **~205 seconds to ~46 seconds** using multiprocessing.
+- Parallel processing achieved an approximate **77% reduction in data collection time**, confirming that I/O-bound workloads benefit significantly from multiprocessing.
 
 
 ## Approach
@@ -22,12 +27,6 @@ Using stock price data from all Korean listed companies since 2020, the primary 
 - Measured execution time before and after parallelization to quantify performance improvements.
 - Built a simple classification model to predict whether the stock price change would be positive or negative, as a downstream use case.
 
-
-## Key Findings
-- Approximately **2,160 company tickers** were collected.
-- The final dataset contained roughly **2.1 million rows** of stock price data.
-- Execution time was reduced from **~205 seconds to ~46 seconds** using multiprocessing.
-- Parallel processing achieved an approximate **77% reduction in data collection time**, confirming that I/O-bound workloads benefit significantly from multiprocessing.
 
 
 ## Code

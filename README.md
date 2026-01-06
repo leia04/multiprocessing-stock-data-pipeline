@@ -1,4 +1,4 @@
-# Stock Data Collection with Multiprocessing and Prediction
+# High-Throughput Stock Data Pipeline & Prediction
 
 ## Abstract
 This project focuses on accelerating large-scale stock data collection using **multiprocessing** rather than optimizing model performance.  
